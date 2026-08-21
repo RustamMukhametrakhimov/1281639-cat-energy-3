@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Рустам M](https://up.htmlacademy.ru/adaptive-individual/3/user/1281639).
-* Наставник: `Ирина Антипина`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
