@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="./favicon.ico">
-  <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -17,7 +18,19 @@
   <header class="main-header">
 
     <a class="main-header__logo logo" href="./index.html">
-      <img class="logo__image" src="#" width="190" height="38" alt="Логотип кэт энерджи">
+
+      <picture>
+        <source type="image/svg+xml" width="70" height="59" media="(min-width: 1440px)" srcset="./images/logo-pic-desktop.svg">
+        <source type="image/svg+xml" width="60" height="50" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg">
+        <img class="logo__image-pic" src="./images/logo-pic-mobile.svg" width="33" height="38" alt="Логотип Cat energy">
+      </picture>
+
+      <picture>
+        <source type="image/svg+xml" width="118" height="21" media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg">
+        <source type="image/svg+xml" width="101" height="18" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg">
+        <img class="logo__image-text" src="./images/logo-text-mobile.svg" width="101" height="20" alt="Подпись Cat energy">
+      </picture>
+
     </a>
 
     <nav class="main-header__navigation navigation">
@@ -64,7 +77,11 @@
         Занялся собой? Займись котом!
       </p>
 
-      <img class="promo__index-image" src="#" width="280" height="270" alt="Банка Cat Energy pro 500 г. со вкусом курицы">
+      <picture>
+        <source type="image/png" width="552" height="499" media="(min-width: 1440px)" srcset="./images/promo-desktop@1x.png 1x, ./images/promo-desktop@2x 2x">
+        <source type="image/png" width="709" height="609" media="(min-width: 768px)" srcset="./images/promo-tablet@1x.png 1x, ./images/promo-tablet@2x 2x">
+        <img class="promo__index-image" src="./images/promo-mobile@1x.png" width="280" height="270" alt="Банка Cat Energy pro 500 г. со вкусом курицы">
+      </picture>
 
       <a class="promo__button button" href="./request.html">подобрать программу</a>
 
@@ -164,8 +181,15 @@
 
       <div class="example__slider-container compare-slider">
 
-        <img class="compare-slider__image compare-slider__image--before" src="#" width="280" height="256" alt="Фото кота до">
-        <img class="compare-slider__image compare-slider__image--after" src="#" width="280" height="256" alt="Фото кота после">
+        <picture>
+          <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x">
+          <img class="compare-slider__image compare-slider__image--before" src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до">
+        </picture>
+
+        <picture>
+          <source type="image/png" width="560" height="512" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x">
+          <img class="compare-slider__image compare-slider__image--after" src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после">
+        </picture>
 
         <label class="visually-hidden" for="before-after">Сравнение до и после</label>
         <input class="compare-slider__range" type="range" min="0" max="100" step="1" name="before-after" id="before-after">
@@ -185,7 +209,13 @@
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
 
-      <div class="contacts__map map">Тут будет карта</div>
+      <div class="contacts__map map">
+        <picture>
+          <source type="image/jpg" media="(min-width: 1440px)" width="1440" height="400" srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x">
+          <source type="image/jpg" media="(min-width: 768px)" width="768" height="400" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x">
+          <img class="map" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение компании на карте">
+        </picture>
+      </div>
 
     </section>
 
@@ -194,7 +224,7 @@
   <footer class="footer">
 
     <a class="footer__logo logo logo--footer" href="./index.html">
-      <img class="logo__image" width="128" height="24" src="#" alt="Cat Energy">
+      <span class="visually-hidden">Cat Energy</span>
     </a>
 
     <div class="footer__social social">
