@@ -6,6 +6,10 @@
   <title>Cat Energy - Подбор программы</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -14,7 +18,19 @@
   <header class="main-header">
 
     <a class="main-header__logo logo" href="./index.html">
-      <img class="logo__image" src="#" width="190" height="38" alt="Логотип кэт энерджи">
+
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-pic-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg" width="60" height="50">
+        <img class="logo__image-pic" src="./images/logo-pic-mobile.svg" width="33" height="38" alt="Логотип Cat energy">
+      </picture>
+
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg" width="118" height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" width="101" height="18">
+        <img class="logo__image-text" src="./images/logo-text-mobile.svg" width="101" height="20" alt="Подпись Cat energy">
+      </picture>
+
     </a>
 
     <nav class="main-header__navigation navigation">
@@ -156,7 +172,13 @@
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
 
-      <div class="contacts__map map">Тут будет карта</div>
+      <div class="contacts__map map">
+        <picture>
+          <source type="image/jpg" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="map" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение компании на карте">
+        </picture>
+      </div>
 
     </section>
 
@@ -165,7 +187,7 @@
   <footer class="footer">
 
     <a class="footer__logo logo logo--footer" href="./index.html">
-      <img class="logo__image" width="128" height="24" src="#" alt="Cat Energy">
+      <span class="visually-hidden">Cat Energy</span>
     </a>
 
     <div class="footer__social social">
