@@ -1,0 +1,12 @@
+//блок кнопка
+.button {
+  padding: 10px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: $text-color-contrast;
+  background-color: $bg-color-additional;
+  border: none;
+}

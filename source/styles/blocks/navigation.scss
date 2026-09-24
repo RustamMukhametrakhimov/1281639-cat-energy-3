@@ -1,0 +1,14 @@
+//навигационноек меню
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__link {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-basic;
+  text-transform: uppercase;
+  text-decoration: none;
+}

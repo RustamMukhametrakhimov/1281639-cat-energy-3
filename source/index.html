@@ -54,7 +54,7 @@
         </li>
 
         <li class="navigation__item">
-          <a class="navigation__link" href="./request.html">
+          <a class="navigation__link" href="./form.html">
             подбор программы
           </a>
         </li>
@@ -83,7 +83,7 @@
         <img class="main-promo__index-image" src="./images/promo-mobile@1x.png" width="280" height="270" alt="Банка Cat Energy pro 500 г. со вкусом курицы">
       </picture>
 
-      <a class="main-promo__button button" href="./request.html">подобрать программу</a>
+      <a class="main-promo__button button" href="./form.html">подобрать программу</a>
 
     </section>
 
@@ -95,8 +95,8 @@
 
         <li class="programs__item">
 
-          <h3 class="programs__title title">
-            Набор массы
+          <h3 class="programs__title title title--uppercase">
+            похудение
           </h3>
 
           <p class="programs__description text">
@@ -111,7 +111,7 @@
 
         <li class="programs__item">
 
-          <h3 class="programs__title title">
+          <h3 class="programs__title title title--uppercase">
             Набор массы
           </h3>
 
@@ -137,19 +137,19 @@
 
       <ul class="how-work__list">
 
-        <li class="how-work__item how-work__item--leaf">
+        <li class="how-work__item how-work__item--leaf text">
           Функциональное питание содержит только полезные питательные вещества.
         </li>
 
-        <li class="how-work__item how-work__item--cup">
+        <li class="how-work__item how-work__item--cup text">
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </li>
 
-        <li class="how-work__item how-work__item--eat">
+        <li class="how-work__item how-work__item--eat text">
           Замените один-два приема обычной еды на наше функциональное питание.
         </li>
 
-        <li class="how-work__item how-work__item--clock">
+        <li class="how-work__item how-work__item--clock text">
           Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
 
@@ -157,29 +157,29 @@
 
     </section>
 
-    <section class="example">
+    <section class="story">
 
-      <h2 class="example__title title">
+      <h2 class="story__title title">
         Живой пример
       </h2>
 
-      <p class="example__text text">
+      <p class="story__text text">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
 
-      <dl class="example__list">
+      <dl class="story__list">
 
-        <dt class="example__term">5 КГ</dt>
-        <dd class="example__definition">снижение веса</dd>
+        <dt class="story__term">5 КГ</dt>
+        <dd class="story__definition text">снижение веса</dd>
 
-        <dt class="example__term">60 ДНЕЙ</dt>
-        <dd class="example__definition">затрачено времени</dd>
+        <dt class="story__term">60 ДНЕЙ</dt>
+        <dd class="story__definition text">затрачено времени</dd>
 
       </dl>
 
-      <p class="example__summury-text text">Затраты на питание: 15 000 РУБ.</p>
+      <p class="story__summury">Затраты на питание: 15 000 РУБ.</p>
 
-      <div class="example__slider-container compare-slider">
+      <div class="story__slider-container compare-slider">
 
         <picture>
           <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x" width="560" height="512">
@@ -224,7 +224,11 @@
   <footer class="footer">
 
     <a class="footer__logo logo logo--footer" href="./index.html">
-      <span class="visually-hidden">Cat Energy</span>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg" width="118" height="21">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" width="101" height="18">
+        <img class="logo__image-text" src="./images/logo-text-mobile.svg" width="101" height="20" alt="Подпись Cat energy">
+      </picture>
     </a>
 
     <div class="footer__social social">
@@ -259,7 +263,7 @@
 
     </div>
 
-    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="footer__copyright text" href="https://htmlacademy.ru/intensive/adaptive">
       HTML Academy
     </a>
 
