@@ -1,0 +1,24 @@
+//блок дополнительного товара
+.sub-products-item__title {
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-secondary-2;
+}
+
+.sub-products-item__container {
+  line-height: 14px;
+}
+
+.sub-products-item__price {
+  line-height: 14px;
+}
+
+.sub-products__promo {
+  background-color: $bg-layout;
+}
+
+.sub-products__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-contrast;
+}
