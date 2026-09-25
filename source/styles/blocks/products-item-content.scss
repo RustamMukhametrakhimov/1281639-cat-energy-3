@@ -1,0 +1,10 @@
+//содержимое карточки без кнопки
+.products-item-content__link {
+  text-decoration: none;
+  color: $text-color-secondary-2;
+}
+
+.products-item-content__title {
+  font-size: 16px;
+  line-height: 20px;
+}

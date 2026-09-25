@@ -1,0 +1,20 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin title() {
+  font-family: $font-secondary;
+}
+
+@mixin label() {
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+}

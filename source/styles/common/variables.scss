@@ -1,1 +1,35 @@
 /* здесь используйте глобальные переменные */
+//задание названия используемых цветов по стайлгайду
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-green: #68b738;
+  --basic-layout: rgba(104, 183, 56, 0.85);
+  --basic-green-2: #5eaa2f;
+  --basic-gray: #f2f2f2;
+  --basic-gray-2: #eaeaea;
+  --special-gray: #cdcdcd;
+  --special-gray-2: #ebebeb;
+  --special-gray-3: #666666;
+  --special-dark-gray: #444444;
+  --special-dark-gray-2: #222222;
+  --special-dark-gray-3: #111111;
+  --status-error: #ff8282;
+}
+
+//шрифты
+$font-primary: "Oswald", sans-serif;
+$font-secondary: "Lato", sans-serif;
+
+//цвет текста
+$text-color-basic: var(--basic-black);
+$text-color-secondary: var(--special-dark-gray);
+$text-color-secondary-2: var(--special-dark-gray-2);
+$text-color-secondary-3: var(--special-dark-gray-3);
+$text-color-contrast: var(--basic-white);
+
+//цвет фона
+$bg-color-basic: var(--basic-white);
+$bg-color-secondary: var(--basic-gray);
+$bg-color-additional: var(--basic-green);
+$bg-layout: var(--basic-layout);

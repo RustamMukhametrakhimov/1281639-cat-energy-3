@@ -1,7 +1,36 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/wrapper.scss";
+@import "./blocks/list-without-marker.scss";
+@import "./blocks/title.scss";
+@import "./blocks/text.scss";
+@import "./blocks/button.scss";
+@import "./blocks/input.scss";
+@import "./blocks/label.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/main-content.scss";
+@import "./blocks/main-promo.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/how-work.scss";
+@import "./blocks/story.scss";
+@import "./blocks/products.scss";
+@import "./blocks/products-item.scss";
+@import "./blocks/products-item-content.scss";
+@import "./blocks/sub-products.scss";
+@import "./blocks/sub-products-item.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/application.scss";
+@import "./blocks/application-form.scss";
+//
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";

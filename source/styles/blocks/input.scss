@@ -1,0 +1,5 @@
+//блок input
+.input {
+  @include label;
+  font-family: $font-primary;
+}

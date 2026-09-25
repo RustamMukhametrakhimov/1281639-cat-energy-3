@@ -1,0 +1,12 @@
+// блок промо на главной странице
+.main-promo {
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-contrast;
+  background-color: $bg-color-basic;
+  background-image: linear-gradient(180deg, $bg-layout 302px, $bg-color-basic 302px);
+}
+
+.main-promo__title {
+  line-height: 36px;
+}
