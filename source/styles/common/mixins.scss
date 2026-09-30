@@ -8,11 +8,16 @@
   }
 }
 
-@mixin title() {
+@mixin title($font-size, $line-heigth: $font-size) {
   font-family: $font-secondary;
+  font-size: $font-size;
+  line-height: $line-heigth;
+  font-weight: 400;
+  color: $text-color-basic;
 }
 
 @mixin label() {
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 18px;
   color: $text-color-secondary;
