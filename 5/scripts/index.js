@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".compare-slider__image--before");document.getElementById("slider-range").addEventListener("input",t=>{let n=t.target.value;e.style.width=`${n}%`})});
