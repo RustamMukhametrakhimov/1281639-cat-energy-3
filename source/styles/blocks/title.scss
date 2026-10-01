@@ -1,10 +1,17 @@
 //блок заголовок
 .title {
+  @include title(24px);
+}
+
+.title--big {
   font-size: 36px;
   line-height: 40px;
-  font-weight: 400;
 }
 
 .title--uppercase {
   text-transform: uppercase;
+}
+
+.title--contrast {
+  color: $text-color-contrast;
 }

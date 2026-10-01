@@ -1,21 +1,66 @@
 //блок программы
 .programs__list {
-  list-style: none;
+  @include list();
 }
 
 .programs__item {
   background-color: $bg-color-secondary;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    border-radius: 50%;
+    background-color: $bg-color-additional;
+  }
+}
+
+.programs__item--slim::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 157px;
+  background-image: url("../../icons/stack.svg#cat-slim");
+}
+
+.programs__item--pro::after {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: 141px;
+  background-image: url("../../icons/stack.svg#cat-pro");
 }
 
 .programs__title {
-  font-size: 24px;
   line-height: 37px;
 }
 
 .programs__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
-  text-transform: uppercase;
   color: $text-color-basic;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -39px;
+    background-image: url("../../icons/stack.svg#arrow");
+  }
 }

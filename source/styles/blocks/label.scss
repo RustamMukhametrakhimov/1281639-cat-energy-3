@@ -1,4 +1,4 @@
 // блок label
 .label {
-  @include label;
+  @include label();
 }

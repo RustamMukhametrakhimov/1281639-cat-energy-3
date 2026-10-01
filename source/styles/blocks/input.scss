@@ -1,5 +1,8 @@
 //блок input
 .input {
-  @include label;
-  font-family: $font-primary;
+  @include label();
+
+  &::placeholder {
+    color: $text-color-secondary;
+  }
 }

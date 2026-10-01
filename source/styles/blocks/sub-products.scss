@@ -7,3 +7,20 @@
 .sub-products__list {
   list-style: none;
 }
+
+.sub-products__promo {
+  width: 280px;
+  height: 290px;
+  padding: 187px 58px 43px;
+  background-color: $bg-layout;
+  background-image: url("../../icons/stack.svg#gift");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position: center 59px;
+  text-align: center;
+}
+
+.sub-products__text {
+  font-size: 16px;
+  line-height: 20px;
+}

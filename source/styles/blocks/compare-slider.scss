@@ -1,0 +1,82 @@
+//блок слайдера сравнения до и после
+.compare-slider {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 256px;
+}
+
+.compare-slider__image {
+  position: absolute;
+  overflow: hidden;
+}
+
+.compare-slider__image--before {
+  width: 49%;
+  background-color: $bg-color-basic;
+  z-index: 2;
+}
+
+.compare-slider__image--after {
+  width: 100%;
+  z-index: 1;
+}
+
+/*
+// стили для кнопки
+.compare-slider__range {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 2px);
+
+  margin: 0;
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  z-index: 3;
+} */
+
+//стили для слайдера
+.compare-slider__range {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 3;
+  appearance: none;
+  background-color: transparent;
+  overflow: hidden;
+
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    display: block;
+    width: 40px;
+    height: 512px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: url("../../icons/stack.svg#range");
+  }
+
+  &::-moz-range-thumb {
+    display: block;
+    width: 40px;
+    height: 512px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: url("../../icons/stack.svg#range");
+  }
+}
+
+@media (min-width: 768px) {
+  .compare-slider {
+    width: 560px;
+    height: 512px;
+  }
+}
