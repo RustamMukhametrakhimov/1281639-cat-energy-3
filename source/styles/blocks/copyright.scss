@@ -1,0 +1,20 @@
+.copyright {
+  width: 320px;
+  height: 34px;
+}
+
+.copyright--text {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.copyright--logo {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../images/html-academy-logo.svg");
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+  mask-position: right;
+  background-color: $bg-color-secondary-2;
+}

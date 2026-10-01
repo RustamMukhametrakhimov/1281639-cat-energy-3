@@ -1,6 +1,6 @@
 //навигационноек меню
 .navigation__list {
-  list-style: none;
+  @include list();
 }
 
 .navigation__link {

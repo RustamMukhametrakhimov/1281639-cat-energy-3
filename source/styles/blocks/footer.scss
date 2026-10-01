@@ -1,10 +1,9 @@
 //блок подвал
 .footer {
   background-color: $bg-color-secondary;
+  padding: 40px 20px;
 }
 
 .footer__copyright {
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
 }

@@ -93,7 +93,7 @@
 
       <ul class="programs__list">
 
-        <li class="programs__item">
+        <li class="programs__item programs__item--slim">
 
           <h3 class="programs__title title title--uppercase">
             похудение
@@ -109,7 +109,7 @@
 
         </li>
 
-        <li class="programs__item">
+        <li class="programs__item programs__item--pro">
 
           <h3 class="programs__title title title--uppercase">
             Набор массы
@@ -181,18 +181,28 @@
 
       <div class="story__slider-container compare-slider">
 
-        <picture>
-          <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x" width="560" height="512">
-          <img class="compare-slider__image compare-slider__image--before" src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до">
-        </picture>
+        <div class="compare-slider__image compare-slider__image--before">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x" width="560" height="512">
+            <img src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до">
+          </picture>
+        </div>
 
-        <picture>
-          <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x" width="560" height="512">
-          <img class="compare-slider__image compare-slider__image--after" src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после">
-        </picture>
+        <div class="compare-slider__image compare-slider__image--after">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x" width="560" height="512">
+            <img src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после">
+          </picture>
+        </div>
 
-        <label class="visually-hidden" for="before-after">Сравнение до и после</label>
-        <input class="compare-slider__range" type="range" min="0" max="100" step="1" name="before-after" id="before-after">
+        <!-- пробуем кнопку вместо слайдера
+        <button class="compare-slider__range" type="button" id="slider-range" draggable="true">
+          <span class="visually-hidden">Управление слайдером</span>
+        </button>
+        -->
+
+        <label class="visually-hidden" for="slider-range">Сравнение до и после</label>
+        <input class="compare-slider__range" type="range" min="0" max="100" step="1" value="49" name="slider-range" id="slider-range">
 
       </div>
 
@@ -263,8 +273,14 @@
 
     </div>
 
-    <a class="footer__copyright text" href="https://htmlacademy.ru/intensive/adaptive">
-      HTML Academy
+    <a class="footer__copyright copyright text" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="wrapper">
+        <div class="copyright copyright--text">HTML Academy</div>
+        <div class="copyright copyright--logo">
+          <span class="visyally-hidden">Логотип HTML Academy</span>
+        </div>
+      </div>
+
     </a>
 
   </footer>

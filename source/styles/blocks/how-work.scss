@@ -1,4 +1,68 @@
 //блок как это работает
 .how-work__list {
-  list-style: none;
+  @include list();
+}
+
+.how-work__item {
+  position: relative;
+  min-height: 60px;
+  margin: 5px; //временное решение для разделения элементов
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-additional;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.how-work__item--leaf::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  background-image: url("../../icons/stack.svg#leaf");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.how-work__item--cup::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  background-image: url("../../icons/stack.svg#cup");
+}
+
+.how-work__item--eat::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  background-image: url("../../icons/stack.svg#eat");
+}
+
+.how-work__item--clock::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 31px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  background-image: url("../../icons/stack.svg#clock");
 }
