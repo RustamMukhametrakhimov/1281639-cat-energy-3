@@ -7,20 +7,37 @@
   display: block;
   width: 28px;
   height: 22px;
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: 28px 22px;
-  background-color: $bg-color-secondary-2;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: 28px 22px;
+    background-color: $bg-color-secondary-2;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-color-additional;
+  }
+
+  &:active::after {
+    background-color: $bg-color-additional;
+    opacity: 30%;
+  }
 }
 
-.social__link--vk {
+.social__link--vk::after {
   mask-image: url("../../icons/stack.svg#vkontakte");
 }
 
-.social__link--youtube {
+.social__link--youtube::after {
   mask-image: url("../../icons/stack.svg#youtube");
 }
 
-.social__link--telegram {
+.social__link--telegram::after {
   mask-image: url("../../icons/stack.svg#telegram");
 }
