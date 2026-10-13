@@ -1,1 +1,14 @@
-//здесь может быть что-то будет
+//класс логотипы
+.logo {
+  display: block;
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
