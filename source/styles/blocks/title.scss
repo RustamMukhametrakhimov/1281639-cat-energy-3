@@ -1,6 +1,8 @@
 //блок заголовок
 .title {
   @include title(24px);
+  margin: 0;
+  padding: 0;
 }
 
 .title--big {
