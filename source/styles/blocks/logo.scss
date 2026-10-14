@@ -1,6 +1,11 @@
 //класс логотипы
 .logo {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
   transition: opacity 0.2s;
 
   &:hover,
@@ -10,5 +15,15 @@
 
   &:active {
     opacity: 60%;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .logo__image-pic {
+    margin-right: 13px;
+  }
+
+  .logo--footer {
+    padding: 0;
   }
 }

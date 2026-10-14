@@ -19,33 +19,25 @@
 
     <nav class="main-header__navigation navigation">
 
-      <div class="navigation__wrapper">
+      <a class="navigation__logo logo" href="./index.html">
 
-        <a class="navigation__logo logo" href="./index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-pic-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg" width="60" height="50">
+          <img class="logo__image-pic" src="./images/logo-pic-mobile.svg" width="33" height="38" alt="Товарный знак Cat energy">
+        </picture>
 
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-pic-desktop.svg" width="70" height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-pic-tablet.svg" width="60" height="50">
-            <img class="logo__image-pic" src="./images/logo-pic-mobile.svg" width="33" height="38" alt="Логотип Cat energy">
-          </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-tablet.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" width="101" height="18">
+          <img class="logo__image-text" src="./images/logo-text-mobile.svg" width="101" height="20" alt="Логотип Cat energy">
+        </picture>
 
-        </a>
+      </a>
 
-        <a class="navigation__logo-text logo" href="./index.html">
-
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-tablet.svg" width="118" height="21">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" width="101" height="18">
-            <img class="logo__image-text" src="./images/logo-text-mobile.svg" width="101" height="20" alt="Подпись Cat energy">
-          </picture>
-
-        </a>
-
-        <button class="navigation__toggle navigation__toggle--close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-
-      </div>
+      <button class="navigation__toggle navigation__toggle--close" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
 
       <ul class="navigation__list">
 
@@ -177,11 +169,11 @@
 
       <dl class="story__list">
 
-        <dt class="story__term title title--uppercase">5 КГ</dt>
-        <dd class="story__definition text">снижение веса</dd>
+        <dt class="story__term text">снижение веса</dt>
+        <dd class="story__definition title title--uppercase">5 КГ</dd>
 
-        <dt class="story__term title title--uppercase">60 ДНЕЙ</dt>
-        <dd class="story__definition text">затрачено времени</dd>
+        <dt class="story__term text">затрачено времени</dt>
+        <dd class="story__definition title title--uppercase">60 ДНЕЙ</dd>
 
       </dl>
 
@@ -249,37 +241,33 @@
       </picture>
     </a>
 
-    <div class="footer__social social">
+    <ul class="footer__social-list social">
 
-      <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="#">
+          <span class="visually-hidden">
+            Группа ВКонтакте
+          </span>
+        </a>
+      </li>
 
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden">
-              Группа ВКонтакте
-            </span>
-          </a>
-        </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">
+            Ютуб канал
+          </span>
+        </a>
+      </li>
 
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">
-              Ютуб канал
-            </span>
-          </a>
-        </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">
+            Телеграмм канал
+          </span>
+        </a>
+      </li>
 
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">
-              Телеграмм канал
-            </span>
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
+    </ul>
 
     <a class="footer__copyright copyright text" href="https://htmlacademy.ru/intensive/adaptive">
       HTML Academy
