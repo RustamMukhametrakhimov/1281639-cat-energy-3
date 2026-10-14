@@ -19,7 +19,12 @@
 }
 
 @media (min-width: $width-tablet) {
+  .logo {
+    padding: 0;
+  }
+
   .logo__image-pic {
+    height: 50px;
     margin-right: 13px;
   }
 
