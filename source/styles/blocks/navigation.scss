@@ -109,6 +109,22 @@
     padding: 0;
     padding-top: 14px;
   }
+
+  .navigation__link--current {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      z-index: 1;
+
+      display: block;
+      width: 100%;
+
+      border-bottom: 2px solid $bg-color-additional;
+    }
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -134,5 +150,15 @@
 
   .navigation__link {
     padding: 0;
+  }
+
+  .navigation--index .navigation__link {
+    color: $text-color-contrast;
+  }
+
+  .navigation--index .navigation__link--current::after {
+    bottom: -14px;
+
+    border-bottom: 2px solid $bg-color-basic;
   }
 }

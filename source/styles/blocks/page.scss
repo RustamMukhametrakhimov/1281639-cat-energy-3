@@ -4,7 +4,15 @@
 }
 
 .page__body {
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+}
+
+@media (min-width: $width-desktop) {
+  .page__body {
+    background-image: url("../../images/promo-background-desktop@1x.jpg");
+    background-position: top 0 right calc(50% - 521px);
+    background-repeat: no-repeat;
+  }
 }

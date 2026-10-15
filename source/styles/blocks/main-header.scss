@@ -1,1 +1,6 @@
 //стили для шапки страницы
+@media (min-width: $width-desktop) {
+  .main-header--index {
+    background-image: linear-gradient(90deg, $bg-color-basic 50%, $bg-layout 50%);
+  }
+}
