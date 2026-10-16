@@ -6,18 +6,21 @@
 
 
 /* BLOCKS */
+//common
 @import "./blocks/visually-hidden.scss";
-@import "./blocks/wrapper.scss";
 @import "./blocks/list-without-marker.scss";
 @import "./blocks/title.scss";
 @import "./blocks/text.scss";
 @import "./blocks/button.scss";
 @import "./blocks/input.scss";
 @import "./blocks/label.scss";
+@import "./blocks/image.scss";
+//page+header
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/navigation.scss";
+//page content
 @import "./blocks/main-content.scss";
 @import "./blocks/main-promo.scss";
 @import "./blocks/programs.scss";
@@ -32,9 +35,11 @@
 @import "./blocks/subscribe.scss";
 @import "./blocks/application.scss";
 @import "./blocks/application-form.scss";
-//
+//page footer + contacts
 @import "./blocks/contacts.scss";
 @import "./blocks/map.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
+//wrapper
+@import "./blocks/wrapper.scss";

@@ -1,1 +1,8 @@
 //блок для оболочки
+@media (min-width: $width-desktop) {
+  .wrapper {
+    max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

@@ -1,5 +1,5 @@
 //блок программы
-.programs {
+.programs__wrapper {
   padding: 20px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 @media (min-width: $width-tablet) {
-  .programs {
+  .programs__wrapper {
     padding: 0 30px;
   }
 
@@ -172,8 +172,9 @@
 }
 
 @media (min-width: $width-desktop) {
-  .programs {
-    padding: 82px 110px 0;
+  .programs__wrapper {
+    margin: 0 auto;
+    padding-top: 82px;
   }
 
   .programs__list {

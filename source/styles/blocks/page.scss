@@ -10,9 +10,9 @@
 }
 
 @media (min-width: $width-desktop) {
-  .page__body {
+  .page__body--index {
     background-image: url("../../images/promo-background-desktop@1x.jpg");
-    background-position: top 0 right calc(50% - 521px);
+    background-position: top 0 right max(min((50% - 521px), 0%));
     background-repeat: no-repeat;
   }
 }

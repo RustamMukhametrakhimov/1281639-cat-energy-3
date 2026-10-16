@@ -4,7 +4,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
 
   transition: opacity 0.2s;
 
@@ -18,17 +17,38 @@
   }
 }
 
-@media (min-width: $width-tablet) {
-  .logo {
-    padding: 0;
-  }
+.logo__pic {
+  width: 33px;
+  height: 38px;
+}
 
-  .logo__image-pic {
+.logo__text {
+  width: 101px;
+  height: 18px;
+}
+
+.logo__text--footer {
+  width: 128px;
+  height: 24px;
+}
+
+@media (min-width: $width-tablet) {
+  .logo__pic {
+    width: 60px;
     height: 50px;
     margin-right: 13px;
   }
+}
 
-  .logo--footer {
-    padding: 0;
+@media (min-width: $width-desktop) {
+  .logo__pic {
+    width: 70px;
+    height: 59px;
+    margin-right: 14px;
+  }
+
+  .logo__text {
+    width: 118px;
+    height: 21px;
   }
 }
