@@ -1,68 +1,153 @@
 //блок как это работает
+.how-work__wrapper {
+  padding: 20px 20px 49px;
+}
+
+.how-work__title {
+  margin-bottom: 40px;
+}
+
 .how-work__list {
   @include list();
+
+  counter-reset: item 0;
 }
 
 .how-work__item {
   position: relative;
+
   min-height: 60px;
-  margin: 5px; //временное решение для разделения элементов
   padding-left: 80px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   &::before {
     content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: $bg-color-additional;
     position: absolute;
     top: 0;
     left: 0;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background-color: $bg-color-additional;
   }
 }
 
-.how-work__item--leaf::after {
+.how-work__item--leaf::before {
   content: "";
-  display: block;
-  width: 30px;
-  height: 32px;
   position: absolute;
-  top: 14px;
-  left: 15px;
+
+  display: block;
+
   background-image: url("../../icons/stack.svg#leaf");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 30px 32px;
 }
 
-.how-work__item--cup::after {
+.how-work__item--cup::before {
   content: "";
-  display: block;
-  width: 26px;
-  height: 28px;
   position: absolute;
-  top: 16px;
-  left: 17px;
+
+  display: block;
+
   background-image: url("../../icons/stack.svg#cup");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 26px 28px;
 }
 
-.how-work__item--eat::after {
+.how-work__item--eat::before {
   content: "";
-  display: block;
-  width: 25px;
-  height: 30px;
   position: absolute;
-  top: 15px;
-  left: 17px;
+
+  display: block;
+
   background-image: url("../../icons/stack.svg#eat");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
 }
 
-.how-work__item--clock::after {
+.how-work__item--clock::before {
   content: "";
-  display: block;
-  width: 26px;
-  height: 31px;
   position: absolute;
-  top: 15px;
-  left: 17px;
+
+  display: block;
+
   background-image: url("../../icons/stack.svg#clock");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
 }
+
+@media (min-width: $width-tablet) {
+  .how-work__wrapper {
+    padding: 45px 30px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .how-work__title {
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-work__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 37px 59px;
+  }
+
+  .how-work__item {
+    max-width: 250px;
+    min-height: 280px;
+    padding: 151px 0 57px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    counter-increment: item;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: 40px;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      @include title(280px);
+      content: counter(item);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      display: block;
+
+      color: $text-color-counters;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .how-work__wrapper {
+    margin: 0 auto;
+    padding-top: 71px;
+    padding-bottom: 69px;
+
+    border-bottom: none;
+  }
+}
+
