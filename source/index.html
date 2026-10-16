@@ -172,50 +172,62 @@
 
     <section class="story">
 
-      <h2 class="story__title title title--big">
-        Живой пример
-      </h2>
+      <div class="story__wrapper wrapper">
 
-      <p class="story__text text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
+        <h2 class="story__title title title--big">
+          Живой пример
+        </h2>
 
-      <dl class="story__list">
+        <p class="story__text text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
 
-        <dt class="story__term text">снижение веса</dt>
-        <dd class="story__definition title title--uppercase">5 КГ</dd>
+        <div class="story__info">
 
-        <dt class="story__term text">затрачено времени</dt>
-        <dd class="story__definition title title--uppercase">60 ДНЕЙ</dd>
+          <dl class="story__result">
 
-      </dl>
+            <div class="story__item">
+              <dt class="story__term text">снижение веса</dt>
+              <dd class="story__definition title title--uppercase">5 КГ</dd>
+            </div>
 
-      <p class="story__summury title title--uppercase">Затраты на питание: 15 000 РУБ.</p>
+            <div class="story__item">
+              <dt class="story__term text">затрачено времени</dt>
+              <dd class="story__definition title title--uppercase">60 ДНЕЙ</dd>
+            </div>
 
-      <div class="story__slider-container compare-slider">
+          </dl>
 
-        <div class="compare-slider__image compare-slider__image--before">
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x" width="560" height="512">
-            <img src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до">
-          </picture>
+          <p class="story__summary title title--uppercase">Затраты на питание: <span class="story__total-price">15 000 РУБ.</span> </p>
+
         </div>
 
-        <div class="compare-slider__image compare-slider__image--after">
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x" width="560" height="512">
-            <img src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после">
-          </picture>
-        </div>
+        <div class="story__slider-container compare-slider">
 
-        <!-- пробуем кнопку вместо слайдера
+          <div class="compare-slider__image compare-slider__image--before">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png 1x, ./images/cat-before-tablet@2x.png 2x" width="560" height="512">
+              <img src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до">
+            </picture>
+          </div>
+
+          <div class="compare-slider__image compare-slider__image--after">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png 1x, ./images/cat-after-tablet@2x.png 2x" width="560" height="512">
+              <img src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после">
+            </picture>
+          </div>
+
+          <!-- пробуем кнопку вместо слайдера
         <button class="compare-slider__range" type="button" id="slider-range" draggable="true">
           <span class="visually-hidden">Управление слайдером</span>
         </button>
         -->
 
-        <label class="visually-hidden" for="slider-range">Сравнение до и после</label>
-        <input class="compare-slider__range" type="range" min="0" max="100" step="1" value="49" name="slider-range" id="slider-range">
+          <label class="visually-hidden" for="slider-range">Сравнение до и после</label>
+          <input class="compare-slider__range" type="range" min="0" max="100" step="1" value="49" name="slider-range" id="slider-range">
+
+        </div>
 
       </div>
 

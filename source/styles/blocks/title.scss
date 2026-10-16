@@ -13,3 +13,10 @@
 .title--uppercase {
   text-transform: uppercase;
 }
+
+@media (min-width: $width-tablet) {
+  .title--big {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

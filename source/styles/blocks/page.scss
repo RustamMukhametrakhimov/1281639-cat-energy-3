@@ -7,6 +7,22 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: $text-color-basic;
+  background-color: $bg-color-basic;
+}
+
+@media (min-width: $width-tablet) {
+  .page__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: $width-desktop) {
