@@ -1,13 +1,16 @@
 //блок таблица
 .details-table {
   border-collapse: collapse;
-  margin-bottom: 4px;
 }
 
 .details-table__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.details-table__row--product:last-child {
+  margin-bottom: 4px;
 }
 
 .details-table__name,
@@ -20,6 +23,10 @@
     padding: 5px 0;
 
     border-bottom: 1px solid $border-table;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -9,11 +9,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-  border-bottom: 1px solid $bg-color-secondary-3;
+  border-bottom: 1px solid $border-table;
 }
 
 .catalog__item {
-  border-top: 1px solid $bg-color-secondary-3;
+  border-top: 1px solid $border-table;
 }
 
 @media (min-width: $width-tablet) {
