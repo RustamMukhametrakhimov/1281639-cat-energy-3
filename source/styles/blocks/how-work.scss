@@ -1,6 +1,7 @@
 //блок как это работает
-.how-work__wrapper {
-  padding: 20px 20px 49px;
+.how-work {
+  padding-top: 20px;
+  padding-bottom: 49px;
 }
 
 .how-work__title {
@@ -86,8 +87,9 @@
 }
 
 @media (min-width: $width-tablet) {
-  .how-work__wrapper {
-    padding: 45px 30px;
+  .how-work {
+    padding-top: 45px;
+    padding-bottom: 47px;
 
     border-bottom: 1px solid #e6e6e6;
   }
@@ -139,8 +141,7 @@
 }
 
 @media (min-width: $width-desktop) {
-  .how-work__wrapper {
-    margin: 0 auto;
+  .how-work {
     padding-top: 71px;
     padding-bottom: 69px;
 

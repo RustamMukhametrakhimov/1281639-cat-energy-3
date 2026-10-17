@@ -1,0 +1,44 @@
+//блок каталог товаров
+.catalog {
+  padding: 0;
+  padding-top: 41px;
+}
+
+.catalog__list {
+  @include list();
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  border-bottom: 1px solid $bg-color-secondary-3;
+}
+
+.catalog__item {
+  border-top: 1px solid $bg-color-secondary-3;
+}
+
+@media (min-width: $width-tablet) {
+  .catalog {
+    padding: 84px 30px 0;
+  }
+
+  .catalog__list {
+    gap: 60px;
+
+    border-bottom: none;
+  }
+
+  .catalog__item {
+    border-top: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog {
+    padding: 84px 110px 0;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(auto-fit, 245px);
+    gap: 63px 80px;
+  }
+}

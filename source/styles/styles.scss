@@ -15,6 +15,7 @@
 @import "./blocks/input.scss";
 @import "./blocks/label.scss";
 @import "./blocks/image.scss";
+@import "./blocks/wrapper.scss";
 //page+header
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
@@ -27,9 +28,10 @@
 @import "./blocks/how-work.scss";
 @import "./blocks/story.scss";
 @import "./blocks/compare-slider.scss";
-@import "./blocks/products.scss";
-@import "./blocks/products-item.scss";
-@import "./blocks/products-item-content.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/details-table.scss";
+@import "./blocks/show-more-card.scss";
 @import "./blocks/sub-products.scss";
 @import "./blocks/sub-products-item.scss";
 @import "./blocks/subscribe.scss";
@@ -41,5 +43,3 @@
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
-//wrapper
-@import "./blocks/wrapper.scss";

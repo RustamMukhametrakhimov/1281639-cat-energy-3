@@ -1,0 +1,30 @@
+//блок таблица
+.details-table {
+  border-collapse: collapse;
+  margin-bottom: 4px;
+}
+
+.details-table__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details-table__name,
+.details-table__value {
+  padding: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .details-table__row--product {
+    padding: 5px 0;
+
+    border-bottom: 1px solid $border-table;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .details-table__row--product:last-child {
+    padding-bottom: 10px;
+  }
+}

@@ -4,7 +4,8 @@
 }
 
 .story__wrapper {
-  padding: 25px 20px 40px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .story__title {
@@ -64,7 +65,8 @@
   }
 
   .story__wrapper {
-    padding: 45px 30px 101px;
+    padding-top: 45px;
+    padding-bottom: 101px;
   }
 
   .story__title {
@@ -110,7 +112,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 69px 224px;
-    margin: 0 auto;
     padding-top: 0;
     padding-bottom: 75px;
   }
