@@ -1,0 +1,17 @@
+//блок дополнительного товара
+.sub-products-card {
+  padding: 13px 0 19px;
+}
+
+.sub-products-card__title {
+  color: $text-color-secondary-2;
+  padding-bottom: 13px;
+}
+
+.sub-products-card__details {
+  min-width: 100%;
+}
+
+.sub-products-card__order-button {
+  margin-top: 15px;
+}

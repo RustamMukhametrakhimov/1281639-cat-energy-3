@@ -1,0 +1,116 @@
+//блок карты показать больше
+.show-more-card {
+  position: relative;
+
+  display: block;
+
+  min-height: 207px;
+  padding: 78px 20px 25px;
+
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 30px;
+
+    display: block;
+
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 2px;
+
+    display: block;
+
+    background-color: #d3d3d3;
+  }
+}
+
+.show-more-card__title {
+  padding-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-secondary-2;
+  text-transform: uppercase;
+}
+
+.show-more-card__description {
+  padding-bottom: 21px;
+}
+
+@media (min-width: $width-tablet) {
+  .show-more-card {
+    margin-top: 81px;
+    padding: 158px 35px 38px;
+
+    background-image: none;
+
+    border: 2px solid $border-card;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: calc(50% - 1px);
+      width: 2px;
+      height: 60px;
+
+      display: block;
+
+      background-color: #d3d3d3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 80px;
+      left: calc(50% - 30px);
+      width: 60px;
+      height: 2px;
+
+      display: block;
+
+      background-color: #d3d3d3;
+    }
+  }
+
+  .show-more-card__title {
+    padding: 0 40px 23px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .show-more-card__description {
+    padding: 0 40px 83px;
+
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .show-more-card {
+    padding-top: 148px;
+  }
+
+  .show-more-card__title {
+    padding: 0 15px 26px;
+  }
+
+  .show-more-card__description {
+    padding: 0 0 90px;
+
+    line-height: 18px;
+  }
+}

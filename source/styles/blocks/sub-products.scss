@@ -1,23 +1,55 @@
 //блок дополнительные товары
+.sub-products {
+  padding-top: 25px;
+}
+
 .sub-products__title {
-  font-size: 24px;
-  line-height: 24px;
+  padding: 0 20px 36px;
 }
 
 .sub-products__list {
-  list-style: none;
+  @include list;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0 20px;
+
+  margin-bottom: 35px;
+
+  border-bottom: 1px solid $border-table;
+}
+
+.sub-products__item {
+  border-top: 1px solid $border-table;
 }
 
 .sub-products__promo {
-  width: 280px;
-  height: 290px;
-  padding: 187px 58px 43px;
-  background-color: $bg-layout;
-  background-image: url("../../icons/stack.svg#gift");
-  background-size: 78px 80px;
-  background-repeat: no-repeat;
-  background-position: center 59px;
+  position: relative;
+
+  min-height: 290px;
+  padding: 187px 58px 10px;
+
   text-align: center;
+
+  background-color: $bg-layout;
+  background-image: linear-gradient($bg-layout, $bg-layout), url("../../images/catalog-promo-background-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: calc(50% - 39px);
+    width: 78px;
+    height: 80px;
+
+    background-image: url("../../icons/stack.svg#gift");
+    background-size: 78px 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .sub-products__text {

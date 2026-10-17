@@ -13,7 +13,7 @@
 
 .compare-slider__image--before {
   width: 50%;
-  background-color: $bg-color-basic;
+  background-color: $bg-color-secondary-3;
   z-index: 2;
 }
 
@@ -48,7 +48,6 @@
   appearance: none;
   background-color: transparent;
   overflow: hidden;
-
 
   &::-webkit-slider-thumb {
     appearance: none;

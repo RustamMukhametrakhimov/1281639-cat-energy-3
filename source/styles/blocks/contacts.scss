@@ -1,4 +1,18 @@
 // блок контакты
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  background-color: $bg-color-basic;
+}
+
 .contacts__title {
   font-size: 16px;
   line-height: 20px;
@@ -6,4 +20,50 @@
 
 .contacts__address {
   line-height: 20px;
+}
+
+.contacts__map {
+  min-width: 100%;
+}
+
+@media (min-width: $width-tablet) {
+  .contacts__wrapper {
+    padding: 60px 70px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .contacts {
+    grid-template-columns: 1fr 565px 565px 1fr;
+    grid-template-rows: 95px 1fr 106px;
+  }
+
+  .contacts__wrapper {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-right: 45px;
+    z-index: 3;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+
+  .contacts__map {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
 }

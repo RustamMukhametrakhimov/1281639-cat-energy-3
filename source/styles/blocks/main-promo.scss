@@ -1,10 +1,123 @@
 // блок промо на главной странице
 .main-promo {
-  background-color: $bg-color-basic;
-  background-image: linear-gradient(180deg, $bg-layout 302px, $bg-color-basic 302px);
+  background-color: $bg-color-additional;
+  background-image: linear-gradient(0deg, $bg-color-basic 37%, $bg-layout 37%), url("../../images/promo-background-mobile@1x.jpg"), linear-gradient(90deg, #515257, #3d3c41);
+  background-position: 0, top 0 right calc(50% + 34px), 0,;
+  background-repeat: no-repeat;
+  background-size: cover, auto 302px, cover;
+}
+
+.main-promo__wrapper {
+  padding-top: 27px;
+
+  text-align: center;
+}
+
+.main-promo__title {
+  margin-bottom: 25px;
+
+  color: $text-color-contrast;
 }
 
 .main-promo__slogan {
+  margin-bottom: 29px;
+
   font-size: 14px;
   line-height: 14px;
+  color: $text-color-contrast;
+}
+
+@media (min-width: $width-tablet) {
+  .main-promo {
+    background-color: $bg-color-basic;
+    background-image: none;
+  }
+
+  .main-promo__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 65px;
+  }
+
+  .main-promo__title {
+    max-width: 60%;
+    margin-left: 90px;
+    margin-bottom: 40px;
+
+    text-align: left;
+    color: $text-color-basic;
+  }
+
+  .main-promo__slogan {
+    min-width: 60%;
+    margin-left: 90px;
+    margin-bottom: 21px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $text-color-basic;
+  }
+
+  .main-promo__image {
+    grid-row: 3/5;
+    grid-column: 1/-1;
+  }
+
+  .main-promo__button {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+
+    width: 242px;
+    padding: 14px;
+    margin-top: 29px;
+    margin-left: 90px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-promo {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, $bg-color-basic 50%, $bg-layout 50%);
+  }
+
+  .main-promo__wrapper {
+    display: grid;
+    grid-template-columns: 80px 367px auto 1fr;
+    grid-template-rows: 81px auto auto auto 1fr;
+    min-height: 580px;
+    padding-top: 29px;
+  }
+
+  .main-promo__title {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    max-width: 420px;
+    margin: 0;
+  }
+
+  .main-promo__slogan {
+    grid-row: 3/4;
+    grid-column: 2/3;
+
+    margin: 40px 0 0;
+  }
+
+  .main-promo__image {
+    grid-row: 1/-1;
+    grid-column: 3/-2;
+    width: 552px;
+    height: 499px;
+    margin-right: 221px;
+  }
+
+  .main-promo__button {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-self: left;
+    margin: 52px 0 0;
+  }
 }

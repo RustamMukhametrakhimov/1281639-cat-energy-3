@@ -1,4 +1,6 @@
 .text {
+  margin: 0;
+  padding: 0;
   color: $text-color-secondary;
 }
 
@@ -9,4 +11,11 @@
 
 .text--contrast {
   color: $text-color-contrast;
+}
+
+@media (min-width: $width-tablet) {
+  .text--small {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
