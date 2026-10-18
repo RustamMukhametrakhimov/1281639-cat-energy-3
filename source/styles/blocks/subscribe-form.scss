@@ -1,0 +1,28 @@
+//блок форма подписки на странице каталога
+.subscribe-form__input {
+  width: 100%;
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.subscribe-form__button {
+  width: 100%;
+}
+
+@media (min-width: $width-tablet) {
+  .subscribe__form {
+    display: flex;
+  }
+
+  .subscribe-form__input {
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .subscribe-form__button {
+    width: 256px;
+  }
+}

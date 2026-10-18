@@ -1,8 +1,21 @@
 //блок input
 .input {
   @include label();
+  padding: 12px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  border: 1px solid $border-table;
 
   &::placeholder {
     color: $text-color-secondary;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .input {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
