@@ -55,6 +55,8 @@
 }
 
 .story__slider-container {
+  width: 280px;
+  height: 256px;
   margin: 0 auto;
 }
 
@@ -103,6 +105,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .story__slider-container {
+    width: 560px;
+    height: 512px;
   }
 }
 

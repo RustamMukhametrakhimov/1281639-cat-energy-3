@@ -19,11 +19,22 @@ nav.addEventListener('click', () => {
 
 
 //слайдер
-document.addEventListener('DOMContentLoaded', () => {
-  const beforeImg = document.querySelector('.compare-slider__image--before');
+const beforeImg = document.querySelector('.compare-slider__image--before');
+const afterImg = document.querySelector('.compare-slider__image--after');
+const divider = document.querySelector('.compare-slider__divider');
 
-  document.getElementById('slider-range').addEventListener('input', (e) => {
-    const position = e.target.value;
-    beforeImg.style.width = `${position }%`;
-  });
+const clipImage = (value) => {
+  beforeImg.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+  afterImg.style.clipPath = `inset(0 0 0 ${value}%)`;
+};
+
+const setDividerPosition = (value) => {
+  divider.style.left = `${value}%`;
+};
+
+document.getElementById('slider-range').addEventListener('input', (e) => {
+  const position = e.target.value;
+  clipImage(position);
+  setDividerPosition(position);
 });
+
