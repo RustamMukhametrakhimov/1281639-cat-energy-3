@@ -1,20 +1,22 @@
 /* в этот файл добавляет скрипты*/
 
 //меню + отработка наличия js
-
 const nav = document.querySelector('.navigation');
+const map = document.querySelector('.map--image');
 const toggleBtn = document.querySelector('.navigation__toggle');
 const toggleText = toggleBtn.querySelector('span');
 
 nav.classList.remove('navigation--no-js');
+nav.classList.remove('navigation--opened');
+map.classList.remove('map--no-js');
 
 nav.addEventListener('click', () => {
-  if (toggleBtn.classList.contains('navigation--closed')) {
-    toggleText.content = 'Открыть меню';
-  } else {
+  if (toggleBtn.classList.contains('navigation--opened')) {
     toggleText.content = 'Закрыть меню';
+  } else {
+    toggleText.content = 'Открыть меню';
   }
-  nav.classList.toggle('navigation--closed');
+  nav.classList.toggle('navigation--opened');
 });
 
 
@@ -37,4 +39,3 @@ document.getElementById('slider-range').addEventListener('input', (e) => {
   clipImage(position);
   setDividerPosition(position);
 });
-

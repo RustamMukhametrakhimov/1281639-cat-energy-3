@@ -26,8 +26,8 @@
 
   border: none;
   background-color: $text-color-basic;
-  mask-image: url("../../icons/stack.svg#burger-close");
-  mask-size: 18px 18px;
+  mask-image: url("../../icons/stack.svg#burger-open");
+  mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   transition: opacity 0.2s;
@@ -49,7 +49,7 @@
   position: absolute;
   top: 65px;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   min-width: 100%;
 
@@ -83,13 +83,13 @@
   }
 }
 
-.navigation--closed .navigation__toggle {
-  mask-image: url("../../icons/stack.svg#burger-open");
-  mask-size: contain;
+.navigation--opened .navigation__toggle {
+  mask-image: url("../../icons/stack.svg#burger-close");
+  mask-size: 18px 18px;
 }
 
-.navigation--closed .navigation__list {
-  display: none;
+.navigation--opened .navigation__list {
+  display: flex;
 }
 
 .navigation--no-js .navigation__toggle {
@@ -110,10 +110,6 @@
     border-bottom: none;
   }
 
-  .navigation--closed .navigation__list {
-    display: flex;
-  }
-
   .navigation__logo {
     align-self: flex-start;
     min-width: 174px;
@@ -127,6 +123,7 @@
   }
 
   .navigation__list {
+    display: flex;
     position: static;
     flex-flow: row wrap;
     justify-content: end;

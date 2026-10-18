@@ -3,3 +3,34 @@
   min-width: 100%;
   object-fit: cover;
 }
+
+.map--image {
+  display: none;
+}
+
+.map--no-js {
+  display: block;
+}
+
+.map--google {
+  display: block;
+  width: 100%;
+
+  border: none;
+}
+
+@media (min-width: $width-tablet) {
+  .map--google {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .map__image {
+    min-height: 100%;
+  }
+
+  .map--google {
+    min-height: 100%;
+  }
+}

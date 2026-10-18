@@ -17,7 +17,7 @@
 
   <header class="main-header">
 
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation navigation--opened navigation--no-js">
 
       <a class="navigation__logo logo" href="./index.html">
 
@@ -521,11 +521,18 @@
       </div>
 
       <div class="contacts__map map">
-        <picture>
-          <source type="image/jpg" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x" width="1440" height="400">
-          <source type="image/jpg" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x" width="768" height="400">
-          <img class="map__image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение компании на карте">
-        </picture>
+
+        <div class="map map--image map--no-js">
+          <picture>
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg 1x, ./images/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg 1x, ./images/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img class="map__image image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Расположение компании на карте">
+          </picture>
+        </div>
+
+        <iframe class="map map--google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+        </iframe>
+
       </div>
 
     </section>
@@ -534,45 +541,45 @@
 
   <footer class="footer">
 
-    <a class="footer__logo logo logo--footer" href="./index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-text-mobile.svg" width="118" height="21">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-text-mobile.svg" width="101" height="18">
-        <img class="logo__image-text" src="./images/logo-text-mobile.svg" width="101" height="20" alt="Подпись Cat energy">
-      </picture>
-    </a>
+    <div class="footer__wrapper wrapper">
 
-    <ul class="footer__social-list social">
+      <a class="footer__logo logo" href="./index.html">
+        <img class="logo__text logo__text--footer" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Логотип Cat energy">
+      </a>
 
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="#">
-          <span class="visually-hidden">
-            Группа ВКонтакте
-          </span>
-        </a>
-      </li>
+      <ul class="footer__social-list social">
 
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">
-          <span class="visually-hidden">
-            Ютуб канал
-          </span>
-        </a>
-      </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">
+              Группа ВКонтакте
+            </span>
+          </a>
+        </li>
 
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="#">
-          <span class="visually-hidden">
-            Телеграмм канал
-          </span>
-        </a>
-      </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">
+              Ютуб канал
+            </span>
+          </a>
+        </li>
 
-    </ul>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">
+              Телеграмм канал
+            </span>
+          </a>
+        </li>
 
-    <a class="footer__copyright copyright text" href="https://htmlacademy.ru/intensive/adaptive">
-      HTML Academy
-    </a>
+      </ul>
+
+      <a class="footer__copyright copyright text" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
+
+    </div>
 
   </footer>
 
