@@ -9,9 +9,6 @@
 
 .sub-products__list {
   @include list;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0 20px;
 
   margin-bottom: 35px;
 
@@ -55,4 +52,71 @@
 .sub-products__text {
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .sub-products__list {
+    margin-bottom: 70px;
+  }
+
+  .sub-products__item {
+    border-left: 1px solid $border-table;
+    border-right: 1px solid $border-table;
+  }
+
+  .sub-products__promo {
+    min-height: 200px;
+    padding: 71px 125px 10px 60%;
+
+    text-align: left;
+
+    background-color: $bg-layout;
+    background-image: linear-gradient($bg-layout, $bg-layout), url("../../images/catalog-promo-background-tablet@1x.jpg");
+
+    &::before {
+      top: 57px;
+      left: 77px;
+      width: 80px;
+      height: 83px;
+
+      background-size: 80px 83px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .sub-products__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0 80px;
+  }
+
+  .sub-products__list {
+    flex-grow: 1;
+
+    margin-bottom: 0;
+  }
+
+  .sub-products__item {
+    border-left: none;
+    border-right: none;
+  }
+
+  .sub-products__promo {
+    width: 245px;
+    min-height: auto;
+
+    padding: 185px 42px 10px;
+
+    text-align: center;
+
+    background-color: $bg-layout;
+    background-image: linear-gradient($bg-layout, $bg-layout), url("../../images/catalog-promo-background-desktop@1x.jpg");
+
+    &::before {
+      top: 56px;
+      left: 83px;
+    }
+  }
 }
