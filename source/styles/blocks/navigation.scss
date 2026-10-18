@@ -6,10 +6,13 @@
   justify-content: space-between;
   min-width: 320px;
   padding-top: 13px;
+
+  border-bottom: 1px solid $border-menu;
 }
 
 .navigation__logo {
   margin-left: 20px;
+  margin-bottom: 13px;
   min-width: calc(50% + 30px);
 }
 
@@ -18,14 +21,15 @@
   height: 24px;
   margin: 0;
   margin-right: 20px;
+  margin-bottom: 13px;
   padding: 0;
 
   border: none;
   background-color: $text-color-basic;
   mask-image: url("../../icons/stack.svg#burger-close");
+  mask-size: 18px 18px;
   mask-repeat: no-repeat;
-  mask-size: contain;
-
+  mask-position: center center;
   transition: opacity 0.2s;
 
   cursor: pointer;
@@ -42,20 +46,20 @@
 
 .navigation__list {
   @include list();
+  position: absolute;
+  top: 65px;
+
   display: flex;
   flex-direction: column;
   min-width: 100%;
-  margin-top: 15px;
+
+  background-color: $bg-color-basic;
 }
 
 .navigation__item {
   min-width: 100%;
 
-  border-bottom: 1px solid #e6e6e6;
-
-  &:first-child {
-    border-top: 1px solid #e6e6e6;
-  }
+  border-top: 1px solid $border-menu;
 }
 
 .navigation__link {
@@ -66,6 +70,34 @@
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.navigation--closed .navigation__toggle {
+  mask-image: url("../../icons/stack.svg#burger-open");
+  mask-size: contain;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
+}
+
+.navigation--no-js .navigation__toggle {
+  display: none;
+}
+
+.navigation--no-js .navigation__list {
+  position: static;
 }
 
 @media (min-width: $width-tablet) {
@@ -74,12 +106,19 @@
     justify-content: space-between;
     gap: 5px 30px;
     padding: 25px 34px 0 30px;
+
+    border-bottom: none;
+  }
+
+  .navigation--closed .navigation__list {
+    display: flex;
   }
 
   .navigation__logo {
     align-self: flex-start;
     min-width: 174px;
     margin-left: 0;
+    margin-bottom: 0;
     height: 50px;
   }
 
@@ -88,11 +127,13 @@
   }
 
   .navigation__list {
+    position: static;
     flex-flow: row wrap;
     justify-content: end;
     gap: 5px 30px;
     min-width: 436px;
-    margin-top: 0;
+
+    background-color: transparent;
   }
 
   .navigation__item {
