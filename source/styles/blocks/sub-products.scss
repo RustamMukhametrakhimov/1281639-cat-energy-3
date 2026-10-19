@@ -4,7 +4,7 @@
 }
 
 .sub-products__title {
-  padding: 0 20px 36px;
+  margin-bottom: 36px;
 }
 
 .sub-products__list {
@@ -28,7 +28,7 @@
   text-align: center;
 
   background-color: $bg-layout;
-  background-image: linear-gradient($bg-layout, $bg-layout), url("../../images/catalog-promo-background-mobile@1x.jpg");
+  background-image: linear-gradient($bg-layout, $bg-layout), image-set(url("../../images/catalog-promo-background-mobile@1x.webp") 1dppx, url("../../images/catalog-promo-background-mobile@2x.webp") 2dppx, url("../../images/catalog-promo-background-mobile@1x.jpg") 1dppx, url("../../images/catalog-promo-background-mobile@2x.jpg") 2dppx);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -71,7 +71,7 @@
     text-align: left;
 
     background-color: $bg-layout;
-    background-image: linear-gradient($bg-layout, $bg-layout), url("../../images/catalog-promo-background-tablet@1x.jpg");
+    background-image: linear-gradient($bg-layout, $bg-layout), image-set(url("../../images/catalog-promo-background-tablet@1x.webp") 1dppx, url("../../images/catalog-promo-background-tablet@2x.webp") 2dppx, url("../../images/catalog-promo-background-tablet@1x.jpg") 1dppx, url("../../images/catalog-promo-background-tablet@2x.jpg") 2dppx);
 
     &::before {
       top: 57px;
@@ -87,9 +87,13 @@
 @media (min-width: $width-desktop) {
   .sub-products__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: flex-end;
     gap: 0 80px;
+  }
+
+  .sub-products__title {
+    width: 100%;
   }
 
   .sub-products__list {
@@ -112,7 +116,7 @@
     text-align: center;
 
     background-color: $bg-layout;
-    background-image: linear-gradient($bg-layout, $bg-layout), url("../../images/catalog-promo-background-desktop@1x.jpg");
+    background-image: linear-gradient($bg-layout, $bg-layout), image-set(url("../../images/catalog-promo-background-desktop@1x.webp") 1dppx, url("../../images/catalog-promo-background-desktop@2x.webp") 2dppx, url("../../images/catalog-promo-background-desktop@1x.jpg") 1dppx, url("../../images/catalog-promo-background-desktop@2x.jpg") 2dppx);
 
     &::before {
       top: 56px;

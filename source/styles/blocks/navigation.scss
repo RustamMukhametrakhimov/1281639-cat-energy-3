@@ -48,11 +48,16 @@
   @include list();
   position: absolute;
   top: 65px;
+  z-index: 2;
 
   display: none;
   flex-direction: column;
   min-width: 100%;
 
+  background-color: $bg-color-secondary;
+}
+
+.navigation__list--index {
   background-color: $bg-color-basic;
 }
 
@@ -81,6 +86,10 @@
   &:active {
     opacity: 30%;
   }
+}
+
+.navigation__list--index .navigation__link {
+  color: $text-color-basic;
 }
 
 .navigation--opened .navigation__toggle {

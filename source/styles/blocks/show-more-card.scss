@@ -5,7 +5,7 @@
   display: block;
 
   min-height: 207px;
-  padding: 78px 20px 25px;
+  padding: 78px 20px 0;
 
   text-align: center;
 
@@ -46,13 +46,20 @@
 }
 
 .show-more-card__description {
-  padding-bottom: 21px;
+  padding-bottom: 85px;
+}
+
+.show-more-card__order-button {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  left: 20px;
 }
 
 @media (min-width: $width-tablet) {
   .show-more-card {
     margin-top: 81px;
-    padding: 158px 35px 38px;
+    padding: 158px 35px 0;
 
     background-image: none;
 
@@ -93,9 +100,16 @@
   }
 
   .show-more-card__description {
-    padding: 0 40px 83px;
+    padding: 0 40px 100px;
 
     line-height: 18px;
+  }
+
+  .show-more-card__order-button {
+    position: absolute;
+    right: 35px;
+    bottom: 38px;
+    left: 35px;
   }
 }
 
