@@ -2,28 +2,52 @@
 .subscribe__wrapper {
   padding-top: 32px;
   padding-bottom: 40px;
+}
 
-  text-align: center;
+.subscribe__title {
+  margin-bottom: 32px;
 }
 
 .subscribe__text {
   padding-bottom: 24px;
 
   font-size: 16px;
+  text-align: center;
 }
 
 @media (min-width: $width-tablet) {
   .subscribe__wrapper {
-    padding: 66px 68px 80px;
+    padding-top: 66px;
+    padding-bottom: 80px;
+  }
+
+  .subscribe__title {
+    margin-bottom: 66px;
   }
 
   .subscribe__text {
+    padding: 0 38px 24px;
+
     font-size: 24px;
+  }
+
+  .subscribe-form {
+    max-width: 752px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $width-desktop) {
   .subscribe__wrapper {
-    padding: 72px 244px 104px;
+    padding-top: 72px;
+    padding-bottom: 104px;
+  }
+
+  .subscribe__title {
+    margin-bottom: 72px;
+  }
+
+  .subscribe__text {
+    padding: 0 234px 24px;
   }
 }

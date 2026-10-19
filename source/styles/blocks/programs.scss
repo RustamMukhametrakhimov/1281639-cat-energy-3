@@ -79,7 +79,11 @@
   text-decoration: none;
   color: $text-color-basic;
 
-  transition: transform 0.2s;
+  transition: transform opacity 0.2s;
+
+  &:active {
+    opacity: 30%;
+  }
 
   &::before {
     content: "";
@@ -94,7 +98,8 @@
     background-image: url("../../icons/stack.svg#arrow");
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:active::before {
     transform-origin: 0% 0%;
     transform: scale(1.5, 1);
   }
