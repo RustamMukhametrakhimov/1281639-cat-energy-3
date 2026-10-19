@@ -2,13 +2,11 @@
 
 //меню + отработка наличия js
 const nav = document.querySelector('.navigation');
-const map = document.querySelector('.map--image');
 const toggleBtn = document.querySelector('.navigation__toggle');
 const toggleText = toggleBtn.querySelector('span');
 
 nav.classList.remove('navigation--no-js');
 nav.classList.remove('navigation--opened');
-map.classList.remove('map--no-js');
 
 nav.addEventListener('click', () => {
   if (toggleBtn.classList.contains('navigation--opened')) {
