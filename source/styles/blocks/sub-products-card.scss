@@ -1,0 +1,63 @@
+//блок дополнительного товара
+.sub-products-card {
+  padding: 12px 0 19px;
+}
+
+.sub-products-card__title {
+  color: $text-color-secondary-2;
+  padding-bottom: 13px;
+}
+
+.sub-products-card__details {
+  min-width: 100%;
+}
+
+.sub-products-card__order-button {
+  margin-top: 15px;
+}
+
+@media (min-width: $width-tablet) {
+  .sub-products-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 26px 38px 28px;
+  }
+
+  .sub-products-card__title {
+    padding-bottom: 25px;
+  }
+
+  .sub-products-card__details {
+    min-width: auto;
+  }
+
+  .sub-products-card__order-button {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .sub-products-card {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0 40px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+
+  .sub-products-card__title {
+    flex-grow: 1;
+    padding-bottom: 0;
+  }
+
+  .sub-products-card__details {
+    min-width: 245px;
+  }
+
+  .sub-products-card__order-button {
+    width: 244px;
+  }
+}

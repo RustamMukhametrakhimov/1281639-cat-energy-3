@@ -1,6 +1,8 @@
 //блок заголовок
 .title {
   @include title(24px);
+  margin: 0;
+  padding: 0;
 }
 
 .title--big {
@@ -8,10 +10,29 @@
   line-height: 40px;
 }
 
+.title--small {
+  font-size: 16px;
+  line-height: 16px;
+}
+
 .title--uppercase {
   text-transform: uppercase;
 }
 
-.title--contrast {
-  color: $text-color-contrast;
+
+@media (min-width: $width-tablet) {
+  .title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .title--big {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .title--small {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

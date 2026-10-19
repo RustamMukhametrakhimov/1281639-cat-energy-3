@@ -26,11 +26,25 @@ $text-color-basic: var(--basic-black);
 $text-color-secondary: var(--special-dark-gray);
 $text-color-secondary-2: var(--special-dark-gray-2);
 $text-color-secondary-3: var(--special-dark-gray-3);
+$text-color-counters: var(--basic-gray);
 $text-color-contrast: var(--basic-white);
 
 //цвет фона
 $bg-color-basic: var(--basic-white);
 $bg-color-secondary: var(--basic-gray);
 $bg-color-secondary-2: var(--special-gray-3);
+$bg-color-secondary-3: var(--special-gray-2);
 $bg-color-additional: var(--basic-green);
+$bg-color-additional-2: var(--basic-green-2);
 $bg-layout: var(--basic-layout);
+
+//цвет границ
+$border-basic: var(--special-gray-2);
+$border-table: var(--special-gray);
+$border-card: var(--basic-gray);
+$border-menu: #e6e6e6;
+
+
+//контрольные точки вьюпорта
+$width-tablet: 768px;
+$width-desktop: 1440px;

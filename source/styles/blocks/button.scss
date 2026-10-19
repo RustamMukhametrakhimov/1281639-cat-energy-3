@@ -1,18 +1,32 @@
 //блок кнопка
 .button {
+  display: block;
+  margin: 0;
   padding: 10px;
+
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   color: $text-color-contrast;
+
   background-color: $bg-color-additional;
   border: none;
+
+  text-decoration: none;
 }
 
 .button--secondary {
   color: $text-color-secondary;
+
   background-color: $bg-color-secondary;
+}
+
+.button--big {
+  padding: 15px;
+
+  font-size: 20px;
+  line-height: 26px;
 }

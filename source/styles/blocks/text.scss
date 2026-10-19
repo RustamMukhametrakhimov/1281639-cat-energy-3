@@ -1,4 +1,6 @@
 .text {
+  margin: 0;
+  padding: 0;
   color: $text-color-secondary;
 }
 
@@ -7,6 +9,23 @@
   line-height: 16px;
 }
 
+.text--smaller {
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .text--contrast {
   color: $text-color-contrast;
+}
+
+@media (min-width: $width-tablet) {
+  .text--small {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .text--smaller {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

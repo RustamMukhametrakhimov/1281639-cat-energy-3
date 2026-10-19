@@ -1,9 +1,7 @@
 //блок слайдера сравнения до и после
+
 .compare-slider {
   position: relative;
-  overflow: hidden;
-  width: 280px;
-  height: 256px;
 }
 
 .compare-slider__image {
@@ -12,87 +10,89 @@
 }
 
 .compare-slider__image--before {
-  width: 50%;
-  background-color: $bg-color-basic;
-  z-index: 2;
+  clip-path: inset(0 50% 0 0);
 }
 
 .compare-slider__image--after {
-  width: 100%;
-  z-index: 1;
+  clip-path: inset(0 0 0 50%);
 }
 
-/*
-// стили для кнопки
 .compare-slider__range {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 2px);
-
+  position: relative;
+  width: 100%;
+  height: 100%;
   margin: 0;
-  padding: 0;
-  width: 4px;
-  height: 100%;
-  z-index: 3;
-} */
+  z-index: 2;
 
-//стили для слайдера
-.compare-slider__range {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: col-resize;
-  z-index: 3;
-  appearance: none;
-  background-color: transparent;
-  overflow: hidden;
+  background: transparent;
+  opacity: 0;
+  cursor: pointer;
 
-
-  &::-webkit-slider-thumb {
-    appearance: none;
-    display: block;
-    width: 40px;
-    height: 512px;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    background-color: transparent;
-    background-image: url("../../icons/stack.svg#range");
-
-    &:hover {
-      background-image: url("../../icons/stack.svg#range-hover");
-    }
-
-    &:active {
-      background-image: url("../../icons/stack.svg#range-active");
-    }
+  &:hover + .compare-slider__divider,
+  &:hover + .compare-slider__divider::after {
+    background-color: $bg-color-additional;
   }
 
-  &::-moz-range-thumb {
-    display: block;
-    width: 40px;
-    height: 512px;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    background-color: transparent;
-    background-image: url("../../icons/stack.svg#range");
+  &:hover + .compare-slider__divider::before {
+    border-color: $bg-color-additional;
+  }
 
-    &:hover {
-      background-image: url("../../icons/stack.svg#range-hover");
-    }
+  &:active + .compare-slider__divider {
+    background-color: $bg-color-additional-2;
+    opacity: 60%;
+  }
 
-    &:active {
-      background-image: url("../../icons/stack.svg#range-active");
-    }
+  &:active + .compare-slider__divider::after,
+  &:active + .compare-slider__divider::before {
+    border-color: $bg-color-additional-2;
   }
 }
 
-@media (min-width: 768px) {
-  .compare-slider {
-    width: 560px;
-    height: 512px;
+.compare-slider__divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+
+  width: 4px;
+  padding: 0;
+
+  background-color: $bg-color-secondary-2;
+  border-radius: 2px;
+
+  transform: translateX(-50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 20px);
+    left: -18px;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-color: $bg-color-basic;
+
+    border: 2px solid $bg-color-secondary-2;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 9px);
+    left: -10px;
+
+    display: block;
+    width: 24px;
+    height: 18px;
+
+    background-color: $bg-color-secondary-2;
+    mask-image: url("../../icons/stack.svg#slider-arrow");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
   }
 }
