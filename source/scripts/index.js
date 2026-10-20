@@ -42,4 +42,3 @@ if (divider) {
     setDividerPosition(position);
   });
 }
-
