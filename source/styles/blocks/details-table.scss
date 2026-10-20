@@ -20,7 +20,7 @@
 
 @media (min-width: $width-tablet) {
   .details-table__row--product {
-    padding: 6px 0;
+    padding: 5px 0;
 
     border-bottom: 1px solid $border-table;
 
@@ -28,22 +28,10 @@
       margin-bottom: 0;
     }
   }
-
-  .details-table__row--sub-product .details-table__value {
-    width: 92px;
-
-    text-align: right;
-  }
 }
 
 @media (min-width: $width-desktop) {
   .details-table__row--product:last-child {
     padding-bottom: 10px;
-  }
-
-  .details-table__row--sub-product .details-table__value {
-    width: 42px;
-
-    text-align: left;
   }
 }

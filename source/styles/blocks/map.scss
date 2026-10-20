@@ -4,6 +4,11 @@
   object-fit: cover;
 }
 
+.map--interactive {
+  display: grid;
+  min-height: 100%;
+}
+
 .map--no-js {
   display: none;
 }
@@ -11,6 +16,7 @@
 .map--google {
   display: block;
   width: 100%;
+  min-height: 362px;
 
   border: none;
 }
@@ -22,11 +28,11 @@
 }
 
 @media (min-width: $width-desktop) {
-  .map__image {
+  .map--google {
     min-height: 100%;
   }
 
-  .map--google {
+  .map__image {
     min-height: 100%;
   }
 }

@@ -27,8 +27,9 @@
 
 @media (min-width: $width-desktop) {
   .page__body--index {
-    background-image: image-set(url("../../images/promo-background-desktop@1x.webp") 1dppx, url("../../images/promo-background-desktop@2x.webp") 2dppx, url("../../images/promo-background-desktop@1x.jpg") 1dppx, url("../../images/promo-background-desktop@2x.jpg") 2dppx);
+    background-image: image-set(url("../../images/promo-background-desktop@1x.webp") 1dppx, url("../../images/promo-background-desktop@2x.webp") 2dppx, url("../../images/promo-background-desktop@1x.jpg") 1dppx, url("../../images/promo-background-desktop@2x.jpg") 2dppx), linear-gradient(90deg, $bg-color-basic 0%, $bg-color-basic 50%, #515257 50%, #3d3c41 100%);
     background-position: top 0 right max(min((50% - 521px), 0%));
     background-repeat: no-repeat;
+    background-size: auto 695px, auto 695px;
   }
 }

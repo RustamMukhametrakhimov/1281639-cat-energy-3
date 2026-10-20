@@ -62,7 +62,7 @@
   .product-card {
     grid-template-rows: auto 1fr auto auto;
     grid-template-columns: 1fr;
-    row-gap: 21px;
+    row-gap: 20px;
 
     min-height: 511px;
     padding: 10px 37px 40px;
@@ -87,6 +87,8 @@
 
   .product-card__order-button {
     grid-column: 1/-1;
+
+    margin-top: 10px;
   }
 }
 
@@ -99,5 +101,9 @@
 
   .product-card__title {
     padding: 0 14px;
+  }
+
+  .product-card__order-button {
+    margin-top: 20px;
   }
 }

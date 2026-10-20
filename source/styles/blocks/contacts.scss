@@ -45,14 +45,17 @@
 
 @media (min-width: $width-desktop) {
   .contacts {
-    grid-template-columns: 1fr 565px 565px 1fr;
+    grid-template-columns: 1fr 610px 610px 1fr;
     grid-template-rows: 95px 1fr 106px;
   }
 
   .contacts__wrapper {
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-right: 45px;
+
+    width: 565px;
+    padding: 60px 80px;
+    margin-right: auto;
     z-index: 3;
   }
 
