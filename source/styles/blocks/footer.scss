@@ -26,9 +26,15 @@
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     min-height: 37px;
     padding-top: 55px;
     padding-bottom: 55px;
+  }
+
+  .footer__logo {
+    margin-top: 1px;
+    margin-right: 38px;
   }
 
   .footer__social-list {
@@ -37,6 +43,7 @@
 
   .footer__copyright {
     min-width: 168px;
+    max-width: 280px;
   }
 }
 

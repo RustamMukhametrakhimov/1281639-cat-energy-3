@@ -4,6 +4,10 @@
   object-fit: cover;
 }
 
+.map--no-js {
+  display: none;
+}
+
 .map--google {
   display: block;
   width: 100%;

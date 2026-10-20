@@ -19,12 +19,14 @@
 }
 
 .contacts__address {
+  margin-right: 3px;
+
   line-height: 20px;
 }
 
 @media (min-width: $width-tablet) {
   .contacts__wrapper {
-    padding: 60px 70px;
+    padding: 61px 70px;
   }
 
   .contacts__title {

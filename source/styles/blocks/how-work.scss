@@ -6,6 +6,8 @@
 
 .how-work__title {
   margin-bottom: 40px;
+
+  line-height: 40px;
 }
 
 .how-work__list {
@@ -18,7 +20,7 @@
   position: relative;
 
   min-height: 60px;
-  padding-left: 80px;
+  padding: 2px 0 4px 80px;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -96,6 +98,8 @@
 
   .how-work__title {
     margin-bottom: 32px;
+
+    line-height: 60px;
   }
 
   .how-work__list {
@@ -134,6 +138,7 @@
       z-index: -1;
 
       display: block;
+      width: 136px;
 
       color: $text-color-counters;
     }
@@ -146,5 +151,9 @@
     padding-bottom: 69px;
 
     border-bottom: none;
+  }
+
+  .how-work__list {
+    column-gap: 78px;
   }
 }
