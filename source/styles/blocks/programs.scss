@@ -61,45 +61,52 @@
 }
 
 .programs__title {
-  margin-left: 90px;
+  margin-left: 70px;
   margin-bottom: 29px;
 
   line-height: 37px;
 }
 
 .programs__description {
-  margin-bottom: 38px;
+  padding-bottom: 22px;
+  margin-bottom: 15px;
+
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link {
   position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  padding: 4px 0;
 
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: $text-color-basic;
 
-  transition: transform opacity 0.2s;
+  transition: opacity 0.1s;
 
   &:active {
     opacity: 30%;
   }
 
-  &::before {
+  &::after {
     content: "";
-    position: absolute;
-    top: 6px;
-    right: -39px;
-
+    flex-shrink: 0;
     display: block;
     width: 24px;
     height: 12px;
 
     background-image: url("../../icons/stack.svg#arrow");
+
+    transition: transform 0.2s;
   }
 
-  &:hover::before,
-  &:active::before {
+  &:hover::after,
+  &:active::after {
     transform-origin: 0% 0%;
     transform: scale(1.5, 1);
   }
@@ -111,7 +118,7 @@
   }
 
   .programs__item {
-    padding: 77px 316px 53px 52px;
+    padding: 76px 316px 58px 52px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -119,7 +126,7 @@
 
     &::before {
       top: 92px;
-      right: 63px;
+      right: 64px;
       left: auto;
 
       width: 200px;
@@ -129,7 +136,7 @@
 
   .programs__item--slim::after {
     top: 81px;
-    right: 93px;
+    right: 94px;
     left: auto;
 
     width: 140px;
@@ -138,7 +145,7 @@
 
   .programs__item--pro::after {
     top: 135px;
-    right: 29px;
+    right: 30px;
     left: auto;
 
     width: 268px;
@@ -154,20 +161,19 @@
   }
 
   .programs__description {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 
     font-size: 16px;
     line-height: 24px;
+
+    border-bottom: none;
   }
 
   .programs__link {
+    gap: 0 25px;
+
     font-size: 20px;
     line-height: 20px;
-
-    &::before {
-      top: 9px;
-      right: -49px;
-    }
 
     &:hover::before {
       transform-origin: 0% 0%;
@@ -189,6 +195,7 @@
 
   .programs__item {
     max-width: 570px;
+    min-height: 374px;
     padding: 77px 61px 55px 52px;
 
     &:not(:last-child) {
@@ -224,11 +231,11 @@
   }
 
   .programs__title {
-    margin-left: 214px;
+    margin-left: 162px;
     margin-bottom: 73px;
   }
 
   .programs__description {
-    margin-bottom: 23px;
+    margin-bottom: 5px;
   }
 }

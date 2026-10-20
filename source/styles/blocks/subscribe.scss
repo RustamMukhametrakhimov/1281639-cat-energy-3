@@ -1,6 +1,6 @@
 //блок подписка
 .subscribe__wrapper {
-  padding-top: 32px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -17,7 +17,7 @@
 
 @media (min-width: $width-tablet) {
   .subscribe__wrapper {
-    padding-top: 66px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 
@@ -32,22 +32,29 @@
   }
 
   .subscribe-form {
-    max-width: 752px;
+    max-width: 632px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $width-desktop) {
   .subscribe__wrapper {
-    padding-top: 72px;
+    padding-top: 96px;
     padding-bottom: 104px;
   }
 
   .subscribe__title {
     margin-bottom: 72px;
+
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .subscribe__text {
     padding: 0 234px 24px;
+  }
+
+  .subscribe-form {
+    max-width: 752px;
   }
 }

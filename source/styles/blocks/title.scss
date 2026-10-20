@@ -8,7 +8,7 @@
 
 .title--big {
   font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
 }
 
 .title--small {
@@ -18,6 +18,10 @@
 
 .title--uppercase {
   text-transform: uppercase;
+}
+
+.title--line {
+  display: flex;
 }
 
 .title--line::before {
@@ -37,6 +41,7 @@
 }
 
 .title__with-line {
+  display: block;
   padding-left: 20px;
   padding-right: 40px;
   margin-left: -20px;
